@@ -1,0 +1,17 @@
+== README
+
+
+Objective: 
+
+Look for twitter accounts for listed celebrities on wikipedia.
+
+
+Description:
+
+Going through the list of American film actresses on wikipedia and extract all the actress names.  Then
+
+verify whether they have twitter accounts.  If they do, record their twitter profile page URL.  Instead of saving
+
+output data to a text file, it’s a plus to store in database with actress/twitter_url columns and make
+
+searchable by name(actress).

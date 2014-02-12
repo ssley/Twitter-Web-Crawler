@@ -1,0 +1,56 @@
+CREATE DATABASE  IF NOT EXISTS `american_actresses` /*!40100 DEFAULT CHARACTER SET utf8 */;
+USE `american_actresses`;
+-- MySQL dump 10.13  Distrib 5.6.13, for Win32 (x86)
+--
+-- Host: localhost    Database: american_actresses
+-- ------------------------------------------------------
+-- Server version	5.6.16
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `actresses`
+--
+
+DROP TABLE IF EXISTS `actresses`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `actresses` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) DEFAULT NULL,
+  `twitter` varchar(255) DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=139 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `actresses`
+--
+
+LOCK TABLES `actresses` WRITE;
+/*!40000 ALTER TABLE `actresses` DISABLE KEYS */;
+INSERT INTO `actresses` VALUES (1,'Mariann Aalda','https://twitter.com/mariannaalda',NULL,NULL),(2,'Caroline Aaron','https://twitter.com/begspoker',NULL,NULL),(3,'Diahnne Abbott','https://twitter.com/Diahnney',NULL,NULL),(4,'Rose Abdoo','https://twitter.com/Roseabdoo',NULL,NULL),(5,'Whitney Able','https://twitter.com/WhitneyNeesAble',NULL,NULL),(6,'Candice Accola','https://twitter.com/CandiceAccola',NULL,NULL),(7,'Amy Acker','https://twitter.com/AmyAcker',NULL,NULL),(8,'Jean Acker','https://twitter.com/AmyAcker',NULL,NULL),(9,'Bettye Ackerman','https://twitter.com/ackermanqaop',NULL,NULL),(10,'Amy Adams','https://twitter.com/amyadamsMP',NULL,NULL),(11,'Brooke Adams','https://twitter.com/BrookeTess',NULL,NULL),(12,'Edie Adams','https://twitter.com/EdieAdams',NULL,NULL),(13,'Jane Adams','https://twitter.com/WildlifeStuff',NULL,NULL),(14,'Joey Lauren Adams','https://twitter.com/Doug_Karr',NULL,NULL),(15,'Julie Adams','https://twitter.com/adamsteaching',NULL,NULL),(16,'Lillian Adams','https://twitter.com/lillyafe',NULL,NULL),(17,'Shohreh Aghdashloo','https://twitter.com/halaaje',NULL,NULL),(18,'Dianna Agron','https://twitter.com/DiannaAgron',NULL,NULL),(19,'Christina Aguilera','https://twitter.com/xtina',NULL,NULL),(20,'Lexi Ainsworth','https://twitter.com/_lexiainsworth',NULL,NULL),(21,'Jessica Alba','https://twitter.com/jessicaalba',NULL,NULL),(22,'Lola Albright','https://twitter.com/DreamsvilleUSA',NULL,NULL),(23,'Jaimie Alexander','https://twitter.com/JaimieAlexander',NULL,NULL),(24,'Jane Alexander','https://twitter.com/jinnyminnylinny',NULL,NULL),(25,'Khandi Alexander','https://twitter.com/KhandiAlexander',NULL,NULL),(26,'Sasha Alexander','https://twitter.com/SashaAlexander1',NULL,NULL),(27,'Tatyana Ali','https://twitter.com/TatyanaAli',NULL,NULL),(28,'Ana Alicia','https://twitter.com/absolutely_ana',NULL,NULL),(29,'Debbie Allen','https://twitter.com/msdebbieallen',NULL,NULL),(30,'Elizabeth Allen','https://twitter.com/thisislizallen',NULL,NULL),(31,'Joan Allen','https://twitter.com/JoanAllenPhoto',NULL,NULL),(32,'Karen Allen','https://twitter.com/BBCKarenAllen',NULL,NULL),(33,'Krista Allen','https://twitter.com/KristaAllenXO',NULL,NULL),(34,'Laura Allen','https://twitter.com/LauraAllenTvl',NULL,NULL),(35,'Nancy Allen','https://twitter.com/RealNancyAllen',NULL,NULL),(36,'Kirstie Alley','https://twitter.com/kirstiealley',NULL,NULL),(37,'June Allyson','https://twitter.com/thetowncryer',NULL,NULL),(38,'Daniella Alonso','https://twitter.com/DaniellaAlonsoJ',NULL,NULL),(39,'Trini Alvarado','https://twitter.com/trini_alvarado',NULL,NULL),(40,'Lauren Ambrose','https://twitter.com/lambrose2',NULL,NULL),(41,'Mädchen Amick','https://twitter.com/auntwendythecat',NULL,NULL),(42,'Suzy Amis','https://twitter.com/suzymusing',NULL,NULL),(43,'Eva Amurri','https://twitter.com/4EvaMartino',NULL,NULL),(44,'Andrea Anders','https://twitter.com/AndreaAnders66',NULL,NULL),(45,'Gillian Anderson','https://twitter.com/GillianA',NULL,NULL),(46,'Loni Anderson','https://twitter.com/LoniAnderson',NULL,NULL),(47,'Mary Anderson','https://twitter.com/MAnderson_95',NULL,NULL),(48,'Melody Anderson','https://twitter.com/ChristLEADSMe',NULL,NULL),(49,'Nicole Anderson','https://twitter.com/HeyItsNicoleA',NULL,NULL),(50,'Jennifer Aniston','https://twitter.com/anistonjennifer',NULL,NULL),(51,'Odette Annable','https://twitter.com/OdetteAnnable',NULL,NULL),(52,'Susan Anton','https://twitter.com/SusanAnton',NULL,NULL),(53,'Shiri Appleby','https://twitter.com/ShiriAppleby',NULL,NULL),(54,'Christina Applegate','https://twitter.com/1capplegate',NULL,NULL),(55,'Anne Archer','https://twitter.com/AnneGA5',NULL,NULL),(56,'Beverly Archer','https://twitter.com/Bookworm307',NULL,NULL),(57,'Leila Arcieri','https://twitter.com/LeilaArcieri',NULL,NULL),(58,'Eve Arden','https://twitter.com/ElizabethArden',NULL,NULL),(59,'Ashley Argota','https://twitter.com/ashleyargota9',NULL,NULL),(60,'Jillian Armenante','https://twitter.com/JillArmenante',NULL,NULL),(61,'Bess Armstrong','https://twitter.com/Lolly_bess',NULL,NULL),(62,'Samaire Armstrong','https://twitter.com/samaire_samaire',NULL,NULL),(63,'Alexis Arquette','https://twitter.com/AlexisArquette',NULL,NULL),(64,'Patricia Arquette','https://twitter.com/PattyArquette',NULL,NULL),(65,'Rosanna Arquette','https://twitter.com/ROKOBLUE',NULL,NULL),(66,'Bea Arthur','https://twitter.com/Deadpool',NULL,NULL),(67,'Jean Arthur','https://twitter.com/ArthurRimbaudJP',NULL,NULL),(68,'Elizabeth Ashley','https://twitter.com/alElizabeth',NULL,NULL),(69,'Mary Astor','https://twitter.com/marieastor',NULL,NULL),(70,'Eden Atwood','https://twitter.com/edenatwood',NULL,NULL),(71,'Margaret Avery','https://twitter.com/SHUGAVERY1985',NULL,NULL),(72,'Nicki Aycox','https://twitter.com/RealNickiAycox',NULL,NULL),(73,'Candice Azzara','https://twitter.com/AzzaraCandice',NULL,NULL),(74,'Lauren Bacall','https://twitter.com/LaurenBacall_',NULL,NULL),(75,'Barbara Bach','https://twitter.com/DallasFoodie',NULL,NULL),(76,'Catherine Bach','https://twitter.com/_CatherineBach',NULL,NULL),(77,'Mary Badham','https://twitter.com/vanbadham',NULL,NULL),(78,'Jane Badler','https://twitter.com/janebadler',NULL,NULL),(79,'Pearl Bailey','https://twitter.com/BaileyPearl',NULL,NULL),(80,'Fay Bainter','https://twitter.com/faybainter',NULL,NULL),(81,'Diora Baird','https://twitter.com/diorabaird1',NULL,NULL),(82,'Carroll Baker','https://twitter.com/CaroleBakerArt',NULL,NULL),(83,'Kathy Baker','https://twitter.com/thekathybaker',NULL,NULL),(84,'Leigh-Allyn Baker','https://twitter.com/L_A_Baker',NULL,NULL),(85,'Brenda Bakke','https://twitter.com/BrendaJeanBakke',NULL,NULL),(86,'Fairuza Balk','https://twitter.com/fairuza',NULL,NULL),(87,'Lucille Ball','https://twitter.com/Golucilleball',NULL,NULL),(88,'Talia Balsam','https://twitter.com/TaliaBalsam',NULL,NULL),(89,'Anne Bancroft','https://twitter.com/polarann',NULL,NULL),(90,'Tallulah Bankhead','https://twitter.com/TallulahTweets',NULL,NULL),(91,'Elizabeth Banks','https://twitter.com/ElizabethBanks',NULL,NULL),(92,'Tyra Banks','https://twitter.com/tyrabanks',NULL,NULL),(93,'Christine Baranski','https://twitter.com/christinebarans',NULL,NULL),(94,'Adrienne Barbeau','https://twitter.com/abarbeau',NULL,NULL),(95,'Ellen Barkin','https://twitter.com/EllenBarkin',NULL,NULL),(96,'Priscilla Barnes','https://twitter.com/prisillygrace',NULL,NULL),(97,'Barbara Barrie','https://twitter.com/BarbaraBarryInc',NULL,NULL),(98,'Dana Barron','https://twitter.com/DanaBarronNYC',NULL,NULL),(99,'Drew Barrymore','https://twitter.com/DrewBarrymore',NULL,NULL),(100,'Ethel Barrymore','https://twitter.com/EBarrymore',NULL,NULL),(101,'Roseanne Barr','https://twitter.com/TheRealRoseanne',NULL,NULL),(102,'Mischa Barton','https://twitter.com/MischAmazing',NULL,NULL),(103,'Kim Basinger','https://twitter.com/KimAbasinger',NULL,NULL),(104,'Angela Bassett','https://twitter.com/ImAngelaBassett',NULL,NULL),(105,'Kathy Bates','https://twitter.com/MsKathyBates',NULL,NULL),(106,'Cyia Batten','https://twitter.com/CyiaOfWTA',NULL,NULL),(107,'Frances Bavier','https://twitter.com/JoeBavier',NULL,NULL),(108,'Anne Baxter','https://twitter.com/DeAnnPgh',NULL,NULL),(109,'Jennifer Beals','https://twitter.com/jenniferbeals',NULL,NULL),(110,'Amanda Bearse','https://twitter.com/MrsBearse',NULL,NULL),(111,'Kimberly Beck','https://twitter.com/KimberlyandBeck',NULL,NULL),(112,'Bonnie Bedelia','https://twitter.com/SmartOne196',NULL,NULL),(113,'Nicole Beharie','https://twitter.com/NikkiBeharieFan',NULL,NULL),(114,'Catherine Bell','https://twitter.com/reallycb',NULL,NULL),(115,'Kristen Bell','https://twitter.com/IMKristenBell',NULL,NULL),(116,'Lake Bell','https://twitter.com/lakebell',NULL,NULL),(117,'Camilla Belle','https://twitter.com/CamillaBelle',NULL,NULL),(118,'Kathleen Beller','https://twitter.com/JerryBeller1',NULL,NULL),(119,'Troian Bellisario','https://twitter.com/troianaverybell',NULL,NULL),(120,'Maria Bello','https://twitter.com/maria_bello',NULL,NULL),(121,'Andrea Bendewald','https://twitter.com/ArtOfCircling',NULL,NULL),(122,'Annette Bening','https://twitter.com/A_BeningFans',NULL,NULL),(123,'Haley Bennett','https://twitter.com/HayleyBennettF',NULL,NULL),(124,'Joan Bennett','https://twitter.com/FromWhatYouHave',NULL,NULL),(125,'Amber Benson','https://twitter.com/amber_benson',NULL,NULL),(126,'Ashley Benson','https://twitter.com/AshBenzo',NULL,NULL),(127,'Julie Benz','https://twitter.com/juliebenz',NULL,NULL),(128,'Candice Bergen','https://twitter.com/CandiceBergenMP',NULL,NULL),(129,'Elizabeth Berkley','https://twitter.com/ElizBerkley',NULL,NULL),(130,'Jeannie Berlin','https://twitter.com/BerlinJeanny',NULL,NULL),(131,'Crystal Bernard','https://twitter.com/CrystalBernard1',NULL,NULL),(132,'Sandra Bernhard','https://twitter.com/SandraBernhard',NULL,NULL),(133,'Halle Berry','https://twitter.com/Halle_Berry_fan',NULL,NULL),(134,'Valerie Bertinelli','https://twitter.com/Wolfiesmom',NULL,NULL),(135,'Angela Bettis','https://twitter.com/AngelaMBettis',NULL,NULL),(136,'Troy Beyer','https://twitter.com/TBeyerRacing',NULL,NULL),(137,'Mayim Bialik','https://twitter.com/missmayim',NULL,NULL),(138,'Leslie Bibb','https://twitter.com/mslesliebibb',NULL,NULL);
+/*!40000 ALTER TABLE `actresses` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2014-02-06 22:00:11
